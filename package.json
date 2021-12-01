@@ -1,0 +1,23 @@
+{
+  "name": "calclearnjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "sass": "^1.44.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "style": "sass sass/style.scss sass/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KirylKarzhavin/CalcLearnJs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KirylKarzhavin/CalcLearnJs/issues"
+  },
+  "homepage": "https://github.com/KirylKarzhavin/CalcLearnJs#readme"
+}
