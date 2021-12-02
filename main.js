@@ -9,24 +9,24 @@ const action = ['+', '/', '*', '-'];
 const out = document.querySelector('textarea');
 
 function clearAll() {
-  let a = '';
-  let b = '';
-  let sign = '';
-  let finish = false;
-  out.textContent = 0;
+  a = '';
+  b = '';
+  sign = '';
+  finish = false;
+  out.textContent = '0';
 }
 
-document.querySelector('.ac').onClick = clearAll;
+document.querySelector('.ac').onclick = clearAll;
 
 document.querySelector('.calc').onclick = event => {
   if (!event.target.classList.contains('button')) return;
-  if (event.target.classList.contains('button__ac')) return;
+  if (event.target.classList.contains('ac')) return;
   out.textContent = '';
 
   const key = event.target.textContent;
 
   if (digit.includes(key)) {
-    if (b == '' && sign == '') {
+    if (b === '' && sign === '') {
       a += key;
       out.textContent = a;
     } else if (a !== '' && b !== '' && finish) {
@@ -71,7 +71,6 @@ document.querySelector('.calc').onclick = event => {
     }
     finish = true;
     out.textContent = a;
-    console.log(a, b, sign);
   }
 };
 
